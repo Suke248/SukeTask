@@ -1,0 +1,520 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-01T15:53:26.794Z",
+        "line": 4,
+        "name": "Login",
+        "description": "",
+        "id": "api-feature;login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1666000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get baseurl for API",
+            "match": {
+              "location": "stepDefinations.APIStepDefinitaions.iGetBaseurlForAPI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3602000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I submit POST request for POSTSAPI",
+            "match": {
+              "location": "stepDefinations.APIStepDefinitaions.iSubmitPOSTRequestForPOSTSAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify statuscode as \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.APIStepDefinitaions.i_verify_statuscode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I submit GET request for POSTSAPI",
+            "match": {
+              "location": "stepDefinations.APIStepDefinitaions.iSubmitGETRequestForPOSTSAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify statuscode as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.APIStepDefinitaions.i_verify_statuscode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 296000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I submit PUT request for POSTSAPI",
+            "match": {
+              "location": "stepDefinations.APIStepDefinitaions.iSubmitPUTRequestForPOSTSAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I verify statuscode as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.APIStepDefinitaions.i_verify_statuscode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I submit DELETE request for POSTSAPI",
+            "match": {
+              "location": "stepDefinations.APIStepDefinitaions.iSubmitDELETERequestForPOSTSAPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I verify statuscode as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinations.APIStepDefinitaions.i_verify_statuscode(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          },
+          {
+            "name": "@REGRESSION"
+          }
+        ]
+      }
+    ],
+    "name": "API Feature",
+    "description": "",
+    "id": "api-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/API_Automation/jsonPlaceholder.feature",
+    "tags": [
+      {
+        "name": "@API",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@REGRESSION",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-01T15:53:33.815Z",
+        "line": 28,
+        "name": "Checkout products",
+        "description": "",
+        "id": "ui-feature-to-check-out-products;checkout-products;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10938000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Login in to the site using user \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 63
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iLoginInToTheSiteUsingUserAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1266000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I sort the products as \"Name (A to Z)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name (A to Z)\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iSortTheProductsAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1290000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I sort the products as \"Name (Z to A)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name (Z to A)\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iSortTheProductsAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I sort the products as \"Price (low to high)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (low to high)\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iSortTheProductsAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1282000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I sort the products as \"Price (high to low)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price (high to low)\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iSortTheProductsAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 669000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I add \"3\" items to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iAddItemsToTheCart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1433000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I visit shopping cart",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iVisitShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify the selected items are added in the cart",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iVerifyTheSelectedItemsAreAddedInTheCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I remove \"1\" item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iRemoveItem(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 237000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I continue shopping",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iContinueShopping()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 300000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I add \"1\" items to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinations.UIStepDefinitions.iAddItemsToTheCart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1380000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I visit shopping cart",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iVisitShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I verify the selected items are added in the cart",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iVerifyTheSelectedItemsAreAddedInTheCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1251000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click checkout button",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iClickCheckoutButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 669000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter checkout information",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iEnterCheckoutInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click continue button",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iClickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "checkout page is displayed",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.checkoutPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I verify total price",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iVerifyTotalPrice()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I finish checkout",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.iFinishCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1139000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "order confirmation message is displayed",
+            "match": {
+              "location": "stepDefinations.UIStepDefinitions.orderConfirmationMessageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          },
+          {
+            "name": "@REGRESSION"
+          }
+        ]
+      }
+    ],
+    "name": "UI Feature to check out products",
+    "description": "",
+    "id": "ui-feature-to-check-out-products",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/UI_Automation/saucedemo.feature",
+    "tags": [
+      {
+        "name": "@UI",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@REGRESSION",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    ]
+  }
+]
